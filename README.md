@@ -42,7 +42,7 @@ Users should be able to:
 ### Links
 
 - Solution URL: [solution URL](https://github.com/AIY7788/age-calculator-app-react)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Live Site URL: [live site URL](https://aiy7788.github.io/age-calculator-app-react/)
 
 ## My process
 
