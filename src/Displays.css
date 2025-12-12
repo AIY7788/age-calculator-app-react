@@ -1,0 +1,11 @@
+.display-section {
+  font-size: 45px;
+  font-weight: 800;
+  font-style: italic;
+  line-height: 1.1;
+}
+
+.display-section span {
+  margin-right: 0.5rem;
+  color: var(--primary-purple-500);
+}
