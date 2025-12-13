@@ -3,14 +3,10 @@
 name: Deploy to GitHub Pages
 
 on:
-  # Trigger เมื่อ Push ไปยัง branch main
   push:
     branches: ["main"]
 
-  # อนุญาตให้รันด้วยตนเอง
   workflow_dispatch:
-
-# ... (ส่วน Permissions, Concurrency)
 
 jobs:
   build:
@@ -22,15 +18,13 @@ jobs:
       - name: Set up Node
         uses: actions/setup-node@v4
         with:
-          node-version: 20
+          node-version: 25
           cache: 'npm'
 
-      # แก้ไขตรงนี้: เพิ่ม working-directory
       - name: Install dependencies
         run: npm ci
         working-directory: ./ 
 
-      # แก้ไขตรงนี้: เพิ่ม working-directory
       - name: Build project
         run: npm run build
         working-directory: ./ 
